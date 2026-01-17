@@ -1,0 +1,35 @@
+{
+  "name": "fullstack-twigs-symfony-starter",
+  "version": "1.0.0",
+  "description": "Simple full-stack development environment with Twig templates and Symfony 6, Docker setup without database",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up -d",
+    "setup": "node scripts/setup.js",
+    "fresh-start": "node scripts/fresh-start.js",
+    "dev": "node scripts/setup.js",
+    "restart": "node scripts/restart.js",
+    "cleanup": "node scripts/cleanup.js",
+    "build": "docker-compose build",
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "backend:install": "cd backend && composer install",
+    "backend:cache-clear": "docker-compose exec backend php bin/console cache:clear",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twig",
+    "symfony",
+    "docker",
+    "fullstack",
+    "php",
+    "simple"
+  ],
+  "author": "Andrius",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fullstack-twigs-symfony-starter.git"
+  }
+}

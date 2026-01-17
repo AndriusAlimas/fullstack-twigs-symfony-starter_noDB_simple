@@ -1,0 +1,19 @@
+services:
+  # Symfony Backend with Twig
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: twigs_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/var/www/html
+    networks:
+      - twigs_network
+    environment:
+      - APP_ENV=dev
+
+networks:
+  twigs_network:
+    driver: bridge

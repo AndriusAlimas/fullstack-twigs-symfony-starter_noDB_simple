@@ -1,0 +1,25 @@
+# Symfony
+backend/var/
+backend/vendor/
+backend/.env.local
+backend/.env.local.php
+backend/.env.*.local
+
+# Docker
+.env
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
