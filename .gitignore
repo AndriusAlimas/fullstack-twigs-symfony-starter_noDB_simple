@@ -4,9 +4,11 @@ backend/vendor/
 backend/.env.local
 backend/.env.local.php
 backend/.env.*.local
+# Include safe .env files (.env, .env.dev, .env.test)
+# Exclude only local overrides
 
-# Docker
-.env
+# Docker - but include docker-compose files
+/.env
 
 # Node
 node_modules/
